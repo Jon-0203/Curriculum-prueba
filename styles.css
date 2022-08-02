@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100 ,200,300 &display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.PerfilTexto h2 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.PerfilTexto .imgCv
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.PerfilTexto .imgCv img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+
+}
+
+.PerfilTexto h2
+{
+    color: #ffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.PerfilTexto h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+.InfContacto
+{
+    padding-top: 40px;
+}
+
+.titulo
+{
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.InfContacto ul
+{
+    position: relative;
+}
+
+.InfContacto ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.InfContacto ul li .icon
+{
+    display: inline-block;
+    width: 25px; 
+    font-size: 20px;
+    color: #03a9f4;
+}
+
+.InfContacto ul li span
+{
+    color: #ffff;
+}
+
+.InfContacto_educación li
+{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.InfContacto_educación h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.InfContacto_educación h4:nth-child(2)
+{
+    color: #ffff;
+    font-weight: 500;
+}
+
+.InfContacto_educación h4
+{
+    color: #ffff;
+    font-weight: 500;
+}
+
+.InfContacto_Language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.InfContacto_Language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right_side
+{
+    position: relative;
+    background: #ffff;
+    padding: 40px;
+}
+.acerca
+{
+    margin-bottom: 50px;
+}
+
+.acerca:last-child
+{
+    margin-bottom: 0;
+}
+
+.titulo2 
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+
+.acerca .caja
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.acerca .caja .year_company
+{
+    min-width: 150px;
+}
+
+.acerca .caja .year_company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    padding:5px;
+}
+
+.acerca .caja .text h4
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #03a9f4;
+    padding:5px;
+
+}
+
+.habilidades .caja
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca.habilidades .caja h4
+{
+    text-transform: uppercase;
+    color:#848c99;
+    font-weight: 500;
+}
+
+.habilidades .caja .percent
+{  
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #f0f0f0;
+}
+
+
+.habilidades .caja .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.intereses ul 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.intereses ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fa
+{
+    color: #03a9f4;
+    font-size: 20px;
+}
+
+@media(max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intereses ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px)
+{
+    .acerca .caja
+    {
+        flex-direction: column;
+    }
+    
+    .intereses ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+ 
